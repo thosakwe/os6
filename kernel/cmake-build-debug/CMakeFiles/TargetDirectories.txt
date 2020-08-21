@@ -1,0 +1,2 @@
+/home/thosakwe/Source/os6/kernel/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/thosakwe/Source/os6/kernel/cmake-build-debug/CMakeFiles/edit_cache.dir

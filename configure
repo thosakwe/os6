@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+export KERNEL_CMAKE_DIR=kernel/cmake-build-debug
+export TARGET=i686-elf
+
+(
+  mkdir -p "$KERNEL_CMAKE_DIR"
+  cd "$KERNEL_CMAKE_DIR"
+  cmake .. -DCMAKE_C_COMPILER=`which $TARGET-gcc` \
+    -DCMAKE_CXX_COMPILER=`which $TARGET-g++`
+)
