@@ -44,8 +44,8 @@ _start:
 	call kernel_main
 	# Forever loop.
 	cli
-1:	hlt
-	jmp 1b
+.hang:
+	jmp .hang
 
 /*
 Set the size of the _start symbol to the current location '.' minus its start.

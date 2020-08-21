@@ -21,6 +21,7 @@ include_directories(include)
 
 add_executable(os6
         boot.S
+				debug.cpp
         main.cpp)
 
 set_target_properties(os6 PROPERTIES SUFFIX ".bin")
