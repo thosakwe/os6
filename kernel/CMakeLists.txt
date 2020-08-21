@@ -7,7 +7,7 @@ set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 set(CMAKE_LINKER ${CMAKE_CXX_COMPILER})
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(CMAKE_VERBOSE_MAKEFILE ON)
+# set(CMAKE_VERBOSE_MAKEFILE ON)
 
 # This option here prevents CMake from adding an -rdynamic link flag, which
 # otherwise breaks the build.

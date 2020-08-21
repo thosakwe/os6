@@ -94,7 +94,7 @@ void terminal_writestring(const char *data) {
   terminal_write(data, strlen(data));
 }
 
-extern "C" void kernel_main(void) {
+void kernel_main(void) {
   /* Initialize terminal interface */
   terminal_initialize();
 
