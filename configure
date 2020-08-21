@@ -6,5 +6,6 @@ export TARGET=i686-elf
   mkdir -p "$KERNEL_CMAKE_DIR"
   cd "$KERNEL_CMAKE_DIR"
   cmake .. -DCMAKE_C_COMPILER=`which $TARGET-gcc` \
-    -DCMAKE_CXX_COMPILER=`which $TARGET-g++`
+    -DCMAKE_CXX_COMPILER=`which $TARGET-g++` \
+    -DCMAKE_TRY_COMPILE_TARGET_TYPE=STATIC_LIBRARY
 )
