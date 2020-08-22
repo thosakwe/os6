@@ -15,7 +15,7 @@ void Debug::println() {
 
 void Debug::print(const char* msg) {
 	const char *ch = msg;
-	while (ch) {
+	while (*ch) {
 		writeChar(*ch);
 		ch++;
 	}

@@ -20,9 +20,13 @@ all: "$(ISO_FILE)"
 
 clean:
 	cmake --build "$(KERNEL_CMAKE_DIR)" --target clean
+	rm -f "$(ISO_FILE)"
 
 distclean: clean
 	rm -rf "$(KERNEL_CMAKE_DIR)"
+
+bochs: "$(ISO_FILE)"
+	bochs -q -rc debug.rc
 
 qemu: "$(ISO_FILE)"
 	qemu-system-i386 -cdrom $< -serial file:/dev/stdout
